@@ -31,7 +31,7 @@ router.get('/deposit/:id' , (req,res) =>{
 })
 
 router.post('/deposit/:id' , (req,res) =>{
-    customerController.Deposit(req.params.id , req.body.deposit)
+     customerController.Deposit(req.params.id , req.body.deposit)
  
     res.redirect('/showall');
 })
